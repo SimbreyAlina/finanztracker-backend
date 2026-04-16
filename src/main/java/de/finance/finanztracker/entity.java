@@ -34,10 +34,8 @@ public class entity {
         this.date = date;
     }
 
- //  @Transient
+ // @Transient
     public String getTyp() {
         return amount >= 0 ? "Einnahme" : "Ausgabe";
     }
-
-
 }
