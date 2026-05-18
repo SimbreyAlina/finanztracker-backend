@@ -1,18 +1,18 @@
 package de.finance.finanztracker;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDate;
 import java.util.List;
 
+@CrossOrigin(origins = "*")
 @RestController
 public class HomeController {
 
     @GetMapping("/")
-    public String home() {
-        return "transactions";
-    }
+    public String home() { return "transactions"; }
 
     @GetMapping("/transactions")
     public List<transaction> getTransactions() {
