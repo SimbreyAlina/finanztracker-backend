@@ -4,16 +4,16 @@ package de.finance.finanztracker;
 import java.time.LocalDate;
 
 //@Entity
-public class transaction {
+public class Transaction {
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
     private double amount;
     private LocalDate date;
 
-    public transaction() {}
+    public Transaction() {}
 
-    public transaction(double amount, LocalDate date) {
+    public Transaction(double amount, LocalDate date) {
         this.amount = amount;
         this.date = date;
     }
