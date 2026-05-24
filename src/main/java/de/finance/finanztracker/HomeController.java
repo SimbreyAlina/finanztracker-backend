@@ -9,7 +9,7 @@ import java.util.List;
 
 
 @RestController
-@CrossOrigin(origins = "*") // <-- Nur einmal! Das "Erlaubt..." aus dem Kommentar hat wohl die Verwirrung gestiftet.
+@CrossOrigin(origins = "https://finanztracker-frontend.onrender.com") // <-- Nur einmal! Das "Erlaubt..." aus dem Kommentar hat wohl die Verwirrung gestiftet.
 public class HomeController {
 
     @GetMapping("/")
