@@ -13,12 +13,14 @@ public class Transaction {
 
     private double amount;
     private LocalDate date;
+    private String category; // Neu hinzugefügt
 
     public Transaction() {}
 
-    public Transaction(double amount, LocalDate date) {
+    public Transaction(double amount, LocalDate date, String category) {
         this.amount = amount;
         this.date = date;
+        this.category = category;
     }
 
     public String getId() { return id; }
@@ -26,6 +28,8 @@ public class Transaction {
     public void setAmount(double amount) { this.amount = amount; }
     public LocalDate getDate() { return date; }
     public void setDate(LocalDate date) { this.date = date; }
+    public String getCategory() { return category; } // Neu
+    public void setCategory(String category) { this.category = category; } // Neu
 
     @Transient
     public String getTyp() {

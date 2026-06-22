@@ -26,8 +26,8 @@ public class HomeController {
 
 
         if (list.isEmpty()) {
-            transactionRepository.save(new Transaction(50.0, LocalDate.of(2024, 1, 15)));
-            transactionRepository.save(new Transaction(-20.0, LocalDate.of(2024, 2, 3)));
+            transactionRepository.save(new Transaction(50.0, LocalDate.of(2024, 1, 15), "Sonstiges"));
+            transactionRepository.save(new Transaction(-20.0, LocalDate.of(2024, 2, 3), "Sonstiges"));
             return transactionRepository.findAll();
         }
 
