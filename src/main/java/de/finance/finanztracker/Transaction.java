@@ -14,6 +14,8 @@ public class Transaction {
     private double amount;
     private LocalDate date;
     private String category; // Neu hinzugefügt
+    private String comment;
+
 
     public Transaction() {}
 
@@ -30,7 +32,8 @@ public class Transaction {
     public void setDate(LocalDate date) { this.date = date; }
     public String getCategory() { return category; } // Neu
     public void setCategory(String category) { this.category = category; } // Neu
-
+    public String getComment() { return comment; }
+    public void setComment(String comment) { this.comment = comment; }
     @Transient
     public String getTyp() {
         return amount >= 0 ? "revenue" : "expense";
